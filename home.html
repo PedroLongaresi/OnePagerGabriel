@@ -238,20 +238,35 @@
             });
         });
 
-        // Máscara de telefone
+        // Máscara de telefone (suporta 8 e 9 dígitos; garante primeiro bloco >= 4)
         function formatPhoneNumber(input) {
             let value = input.value.replace(/\D/g, '');
             if (value.length > 11) value = value.slice(0, 11);
-            
+
             if (value.length === 0) {
                 input.value = '';
-            } else if (value.length <= 2) {
-                input.value = `(${value}`;
-            } else if (value.length <= 7) {
-                input.value = `(${value.slice(0, 2)}) ${value.slice(2)}`;
-            } else {
-                input.value = `(${value.slice(0, 2)}) ${value.slice(2, 7)}-${value.slice(7)}`;
+                return;
             }
+
+            if (value.length <= 2) {
+                input.value = `(${value}`;
+                return;
+            }
+
+            const ddd = value.slice(0, 2);
+            const rest = value.slice(2);
+
+            if (rest.length <= 4) {
+                input.value = `(${ddd}) ${rest}`;
+                return;
+            }
+
+            // primeiro bloco deve ter pelo menos 4 dígitos
+            const firstGroupLen = Math.max(4, rest.length - 4);
+            const first = rest.slice(0, firstGroupLen);
+            const second = rest.slice(firstGroupLen);
+
+            input.value = `(${ddd}) ${first}${second ? '-' + second : ''}`;
         }
 
         document.getElementById('form-phone').addEventListener('input', function() {
