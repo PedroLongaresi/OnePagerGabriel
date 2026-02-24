@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Gabriel Cordeiro Longaresi - Advocacia Especializada</title>
-    <meta name="description" content="Escritório de advocacia especializado em Direito de Família, Civil e do Consumidor. Soluções jurídicas personalizadas para garantir seus direitos.">
+    <title>Advocacia Cordeiro - Especialistas em Direito</title>
+    <meta name="description" content="Escritório Advocacia Cordeiro especializado em Direito de Família, Civil e do Consumidor. Soluções jurídicas personalizadas.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,169 +14,184 @@
             font-family: 'Inter', sans-serif;
         }
         .hero-bg {
-            background: linear-gradient(rgba(10, 20, 40, 0.7), rgba(10, 20, 40, 0.7)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center;
+            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center;
             background-size: cover;
         }
+        .bg-navy-900 { background-color: #0f172a; }
+        .bg-navy-800 { background-color: #1e293b; }
+        .text-navy-900 { color: #0f172a; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-slate-50 text-slate-900">
 
     <!-- Cabeçalho e Navegação -->
-    <header id="inicio" class="bg-white shadow-md sticky top-0 z-50">
+    <header id="inicio" class="bg-white shadow-lg sticky top-0 z-50 border-b border-slate-200">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#inicio" class="text-xl md:text-2xl font-bold text-gray-800 tracking-tight">Dr. Gabriel Cordeiro Longaresi</a>
-            <div class="hidden md:flex space-x-6 font-medium">
-                <a href="#sobre" class="text-gray-600 hover:text-blue-800 transition duration-300">Sobre</a>
-                <a href="#atuacao" class="text-gray-600 hover:text-blue-800 transition duration-300">Áreas de Atuação</a>
-                <a href="#diferenciais" class="text-gray-600 hover:text-blue-800 transition duration-300">Diferenciais</a>
-                <a href="#contato" class="text-gray-600 hover:text-blue-800 transition duration-300">Contato</a>
+            <a href="#inicio" class="text-xl md:text-2xl font-bold text-navy-900 tracking-tighter uppercase">Advocacia Cordeiro</a>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#sobre" class="text-slate-600 hover:text-blue-900 transition duration-300">Sobre</a>
+                <a href="#atuacao" class="text-slate-600 hover:text-blue-900 transition duration-300">Áreas de Atuação</a>
+                <a href="#diferenciais" class="text-slate-600 hover:text-blue-900 transition duration-300">Diferenciais</a>
+                <a href="#contato" class="text-slate-600 hover:text-blue-900 transition duration-300">Contato</a>
             </div>
-            <a href="#contato" class="hidden md:block bg-blue-800 text-white px-5 py-2 rounded-md hover:bg-blue-900 transition duration-300 font-semibold shadow-sm">
+            <a href="#contato" class="hidden md:block bg-blue-900 text-white px-6 py-2.5 rounded hover:bg-slate-900 transition duration-300 font-bold shadow-md">
                 Agende uma Consulta
             </a>
             <!-- Menu Mobile -->
-            <button id="mobile-menu-button" class="md:hidden text-gray-800 focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            <button id="mobile-menu-button" class="md:hidden text-navy-900 focus:outline-none">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
         </nav>
         <!-- Links Menu Mobile -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
-            <a href="#sobre" class="block px-6 py-3 text-gray-600 hover:bg-gray-50">Sobre</a>
-            <a href="#atuacao" class="block px-6 py-3 text-gray-600 hover:bg-gray-50">Áreas de Atuação</a>
-            <a href="#diferenciais" class="block px-6 py-3 text-gray-600 hover:bg-gray-50">Diferenciais</a>
-            <a href="#contato" class="block px-6 py-3 text-gray-600 hover:bg-gray-50 font-semibold text-blue-800">Contato</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100">
+            <a href="#sobre" class="block px-6 py-4 text-slate-600 hover:bg-slate-50">Sobre</a>
+            <a href="#atuacao" class="block px-6 py-4 text-slate-600 hover:bg-slate-50">Áreas de Atuação</a>
+            <a href="#diferenciais" class="block px-6 py-4 text-slate-600 hover:bg-slate-50">Diferenciais</a>
+            <a href="#contato" class="block px-6 py-4 text-blue-900 font-bold hover:bg-slate-50">Contato</a>
         </div>
     </header>
 
     <main>
         <!-- Seção Principal (Hero) -->
-        <section class="hero-bg text-white h-[85vh] flex items-center">
+        <section class="hero-bg text-white h-[85vh] flex items-center border-b-4 border-blue-900">
             <div class="container mx-auto px-6 text-center">
-                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6 drop-shadow-lg">Defendendo seus direitos com excelência e dedicação.</h1>
-                <p class="text-lg md:text-2xl mb-10 max-w-3xl mx-auto font-light drop-shadow-md">Assessoria jurídica de confiança para você e sua empresa. Agende uma consulta hoje mesmo.</p>
-                <a href="https://wa.me/5516992613218?text=Olá,%20Dr.%20Gabriel.%20Gostaria%20de%20agendar%20uma%20consulta%20jurídica." target="_blank" class="bg-green-600 text-white px-10 py-5 rounded-full text-lg font-bold hover:bg-green-700 transition duration-300 inline-flex items-center shadow-lg transform hover:scale-105">
-                    <svg class="w-7 h-7 mr-3" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.886-.001 2.225.651 4.315 1.731 6.086l.001.004 4.971 4.971z"></path></svg>
-                    Nos conte o seu caso!
-                </a>
+                <div class="mb-4 inline-block bg-blue-900/30 backdrop-blur-sm border border-blue-400/30 px-4 py-1 rounded-full text-blue-200 text-sm font-bold tracking-widest uppercase">
+                    Excelência Jurídica em Ribeirão Preto
+                </div>
+                <h1 class="text-4xl md:text-7xl font-bold leading-tight mb-8 drop-shadow-2xl">Defendendo seus interesses com ética e rigor técnico.</h1>
+                <p class="text-lg md:text-2xl mb-12 max-w-4xl mx-auto font-light text-slate-200">A Advocacia Cordeiro oferece soluções jurídicas estratégicas para garantir a sua segurança e a da sua empresa.</p>
+                <div class="flex flex-col md:flex-row justify-center gap-4">
+                    <!-- Botão Atualizado para ser mais persuasivo -->
+                    <a href="https://wa.me/5516992613218?text=Olá,%20Dr.%20Gabriel.%20Gostaria%20de%20agendar%20uma%20consulta%20jurídica." target="_blank" class="bg-green-600 text-white px-10 py-5 rounded text-lg font-bold hover:bg-green-700 transition duration-300 inline-flex items-center justify-center shadow-xl transform hover:-translate-y-1 group">
+                        <svg class="w-7 h-7 mr-3 group-hover:animate-pulse" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.886-.001 2.225.651 4.315 1.731 6.086l.001.004 4.971 4.971z"></path></svg>
+                        Falar com Especialista Agora
+                    </a>
+                </div>
             </div>
         </section>
 
         <!-- Seção Sobre -->
-        <section id="sobre" class="py-24 bg-white">
+        <section id="sobre" class="py-28 bg-white">
             <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
-                <div class="md:w-1/3 flex justify-center">
+                <div class="md:w-5/12">
                     <div class="relative">
-                        <div class="absolute -inset-2 bg-blue-800 rounded-lg blur opacity-20"></div>
-                        <img src="image/4bf2c15d-47e6-46a7-8218-24cabaefac26.jpg" alt="Foto profissional do Dr. Gabriel Cordeiro Longaresi" class="relative rounded-lg shadow-xl w-full max-w-sm object-cover">
+                        <div class="absolute -top-4 -left-4 w-24 h-24 bg-blue-900/10 rounded-full z-0"></div>
+                        <img src="image/4bf2c15d-47e6-46a7-8218-24cabaefac26.jpg" alt="Dr. Gabriel Cordeiro Longaresi" class="relative z-10 rounded shadow-2xl w-full border-8 border-slate-50">
+                        <div class="absolute -bottom-6 -right-6 bg-blue-900 text-white p-6 rounded shadow-xl z-20 hidden lg:block">
+                            <p class="text-3xl font-bold">100%</p>
+                            <p class="text-xs uppercase tracking-widest font-semibold text-blue-200">Compromisso Ético</p>
+                        </div>
                     </div>
                 </div>
-                <div class="md:w-2/3">
-                    <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-2 border-blue-800 inline-block pb-2">Sobre Mim</h2>
-                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">
-                        Advogado formado pela **Universidade Moura Lacerda** com ampla experiência prática em direito ao atuar em diversos escritórios renomados, o que me permite aliar conhecimento acadêmico atualizado com uma visão dinâmica e estratégica da advocacia.
+                <div class="md:w-7/12">
+                    <span class="text-blue-800 font-bold uppercase tracking-widest text-sm mb-2 block">Fundador</span>
+                    <h2 class="text-4xl font-bold text-navy-900 mb-8 leading-tight">Dr. Gabriel Cordeiro Longaresi</h2>
+                    <p class="text-slate-600 text-xl mb-6 leading-relaxed">
+                        Advogado formado pela **Universidade Moura Lacerda** no ano de 2023. Através da Advocacia Cordeiro, trazemos uma visão moderna e célere ao mundo jurídico.
                     </p>
-                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">
-                        Acredito que a advocacia deve ser pautada pela transparência e pelo compromisso total com os resultados do cliente. Cada caso é tratado com exclusividade, buscando sempre a solução jurídica mais eficiente e segura.
+                    <p class="text-slate-600 text-lg mb-10 leading-relaxed">
+                        Nossa prática é alicerçada na transparência e no foco incansável em resultados positivos. Cada cliente recebe um atendimento personalizado diretamente pelo sócio fundador, garantindo que nenhuma dúvida fique sem resposta.
                     </p>
-                    <div class="inline-flex items-center bg-blue-50 border-l-4 border-blue-800 text-blue-900 p-5 rounded-r-lg shadow-sm">
-                        <svg class="w-6 h-6 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                        <p class="font-bold">Inscrito na OAB/SP sob o nº 534.783</p>
+                    <div class="flex items-center space-x-4 bg-slate-100 p-6 rounded border-l-8 border-blue-900 shadow-inner">
+                        <div class="bg-blue-900 text-white p-3 rounded">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <div>
+                            <p class="text-navy-900 font-bold text-lg leading-tight uppercase tracking-tight">OAB/SP 534.783</p>
+                            <p class="text-slate-500 text-sm">Registro Profissional Ativo</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Seção Áreas de Atuação -->
-        <section id="atuacao" class="py-24 bg-gray-50">
+        <section id="atuacao" class="py-28 bg-navy-900 text-white">
             <div class="container mx-auto px-6">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Áreas de Atuação</h2>
-                    <p class="text-gray-600 text-lg max-w-2xl mx-auto">Oferecemos suporte jurídico qualificado nas principais demandas do cotidiano, com foco em resultados sólidos.</p>
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                    <div class="md:w-1/2">
+                        <h2 class="text-4xl font-bold mb-4">Nossa Atuação Jurídica</h2>
+                        <div class="w-20 h-1 bg-blue-500 mb-6"></div>
+                        <p class="text-blue-100 text-lg">Especialistas em resolver conflitos e proteger seus direitos com o máximo rigor técnico.</p>
+                    </div>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                    <div class="bg-white p-10 rounded-xl shadow-md border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                        <div class="bg-blue-800 text-white rounded-xl w-14 h-14 flex items-center justify-center mb-8">
-                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div class="group bg-navy-800 p-12 rounded border border-slate-700 hover:border-blue-500 transition-all duration-500 hover:shadow-2xl">
+                        <div class="text-blue-400 mb-8 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
                         </div>
-                        <h3 class="text-xl font-bold mb-4">Direito de Família</h3>
-                        <p class="text-gray-600 leading-relaxed">Divórcio, pensão alimentícia, guarda, inventários e partilha de bens com sensibilidade e competência técnica.</p>
+                        <h3 class="text-2xl font-bold mb-4">Direito de Família</h3>
+                        <p class="text-slate-400 leading-relaxed text-lg">Assessoria em divórcios, pensão alimentícia, guarda e sucessões, tratando cada caso com a discrição necessária.</p>
                     </div>
-                    <div class="bg-white p-10 rounded-xl shadow-md border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                        <div class="bg-blue-800 text-white rounded-xl w-14 h-14 flex items-center justify-center mb-8">
-                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    <!-- Card 2 -->
+                    <div class="group bg-navy-800 p-12 rounded border border-slate-700 hover:border-blue-500 transition-all duration-500 hover:shadow-2xl">
+                        <div class="text-blue-400 mb-8 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                         </div>
-                        <h3 class="text-xl font-bold mb-4">Direito Civil</h3>
-                        <p class="text-gray-600 leading-relaxed">Elaboração de contratos, ações indenizatórias, cobranças e defesa em questões de posse e propriedade.</p>
+                        <h3 class="text-2xl font-bold mb-4">Direito Civil</h3>
+                        <p class="text-slate-400 leading-relaxed text-lg">Contratos robustos e defesas estratégicas em danos morais, materiais e questões imobiliárias.</p>
                     </div>
-                    <div class="bg-white p-10 rounded-xl shadow-md border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                        <div class="bg-blue-800 text-white rounded-xl w-14 h-14 flex items-center justify-center mb-8">
-                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    <!-- Card 3 -->
+                    <div class="group bg-navy-800 p-12 rounded border border-slate-700 hover:border-blue-500 transition-all duration-500 hover:shadow-2xl">
+                        <div class="text-blue-400 mb-8 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
                         </div>
-                        <h3 class="text-xl font-bold mb-4">Consumidor</h3>
-                        <p class="text-gray-600 leading-relaxed">Proteção contra cobranças indevidas, problemas com compras online, bancos e companhias aéreas.</p>
+                        <h3 class="text-2xl font-bold mb-4">Direito do Consumidor</h3>
+                        <p class="text-slate-400 leading-relaxed text-lg">Ação contra abusos de bancos, companhias aéreas e operadoras, garantindo o cumprimento da lei.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Seção Contato -->
-        <section id="contato" class="py-24 bg-gray-100">
+        <section id="contato" class="py-28 bg-slate-50">
             <div class="container mx-auto px-6">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Agende Sua Consulta</h2>
-                    <p class="text-gray-600 text-lg max-w-xl mx-auto">Preencha o formulário para enviar os detalhes diretamente para o nosso WhatsApp.</p>
-                </div>
-                <div class="flex flex-col md:flex-row gap-16">
-                    <!-- Formulário com redirecionamento para WhatsApp -->
-                    <div class="md:w-1/2 bg-white p-10 rounded-2xl shadow-xl">
-                        <form id="whatsapp-form" class="space-y-6">
-                            <div>
-                                <label for="form-name" class="block text-gray-700 font-semibold mb-2">Seu Nome Completo</label>
-                                <input type="text" id="form-name" class="w-full px-5 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition" placeholder="Como podemos lhe chamar?" required>
-                            </div>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div>
-                                    <label for="form-email" class="block text-gray-700 font-semibold mb-2">E-mail</label>
-                                    <input type="email" id="form-email" class="w-full px-5 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="seu@email.com" required>
-                                </div>
-                                <div>
-                                    <label for="form-phone" class="block text-gray-700 font-semibold mb-2">Seu WhatsApp</label>
-                                    <input type="tel" id="form-phone" class="w-full px-5 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="(16) 99999-9999" required>
-                                </div>
-                            </div>
-                            <div>
-                                <label for="form-message" class="block text-gray-700 font-semibold mb-2">Resumo da Sua Dúvida</label>
-                                <textarea id="form-message" rows="5" class="w-full px-5 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Descreva brevemente como podemos ajudar..." required></textarea>
-                            </div>
-                            <button type="submit" class="w-full bg-green-600 text-white py-4 px-6 rounded-lg font-bold text-lg hover:bg-green-700 transition duration-300 shadow-md transform hover:-translate-y-1 flex items-center justify-center">
-                                <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.886-.001 2.225.651 4.315 1.731 6.086l.001.004 4.971 4.971z"></path></svg>
-                                Enviar para o WhatsApp
-                            </button>
-                        </form>
-                    </div>
-                    <!-- Informações de Contato -->
-                    <div class="md:w-1/2 flex flex-col justify-center space-y-8">
-                        <h3 class="text-2xl font-bold text-gray-800">Atendimento Direto</h3>
+                <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-20">
+                    <!-- Esquerda: Info -->
+                    <div class="lg:w-1/2">
+                        <h2 class="text-4xl font-bold text-navy-900 mb-6 uppercase tracking-tight">Agende agora</h2>
+                        <p class="text-slate-600 text-xl mb-12">Não deixe seus problemas jurídicos acumularem. Fale diretamente com a equipe da Advocacia Cordeiro.</p>
                         
-                        <a href="https://wa.me/5516992613218?text=Olá,%20Dr.%20Gabriel.%20Vim%20pelo%20site%20e%20gostaria%20de%20tirar%20uma%20dúvida." target="_blank" class="group flex items-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all border border-transparent hover:border-green-200">
-                            <div class="bg-green-100 text-green-600 p-4 rounded-full mr-6 group-hover:scale-110 transition-transform">
-                                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.886-.001 2.225.651 4.315 1.731 6.086l.001.004 4.971 4.971z"></path></svg>
-                            </div>
-                            <div>
-                                <p class="text-sm font-semibold text-gray-500 uppercase tracking-wider">WhatsApp Profissional</p>
-                                <p class="text-2xl font-bold text-gray-800">(16) 99261-3218</p>
-                            </div>
-                        </a>
+                        <div class="space-y-10">
+                            <a href="https://wa.me/5516992613218" class="flex items-center group">
+                                <div class="bg-green-600 text-white p-5 rounded-full shadow-lg group-hover:scale-110 transition-transform">
+                                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.886-.001 2.225.651 4.315 1.731 6.086l.001.004 4.971 4.971z"></path></svg>
+                                </div>
+                                <div class="ml-6">
+                                    <p class="text-sm font-bold text-slate-400 uppercase tracking-widest">WhatsApp Direto</p>
+                                    <p class="text-2xl font-bold text-navy-900">(16) 99261-3218</p>
+                                </div>
+                            </a>
 
-                        <div class="flex items-start p-6 bg-white rounded-xl shadow-md">
-                            <div class="bg-blue-100 text-blue-800 p-4 rounded-full mr-6 flex-shrink-0">
-                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                            </div>
-                            <div>
-                                <p class="text-sm font-semibold text-gray-500 uppercase tracking-wider">Localização</p>
-                                <p class="text-lg font-bold text-gray-800 leading-tight">Ribeirão Preto - SP<br><span class="text-sm font-normal text-gray-500 italic">Atendimento presencial e online</span></p>
+                            <div class="flex items-center">
+                                <div class="bg-blue-900 text-white p-5 rounded-full shadow-lg">
+                                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                </div>
+                                <div class="ml-6">
+                                    <p class="text-sm font-bold text-slate-400 uppercase tracking-widest">Sede</p>
+                                    <p class="text-xl font-bold text-navy-900 leading-tight">Ribeirão Preto - São Paulo</p>
+                                    <p class="text-slate-500">Atendimento Presencial e Online</p>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                    
+                    <!-- Direita: Form -->
+                    <div class="lg:w-1/2 bg-white p-12 rounded-lg shadow-2xl border-t-8 border-blue-900">
+                        <form id="whatsapp-form" class="space-y-8">
+                            <div class="relative">
+                                <input type="text" id="form-name" class="w-full bg-slate-50 border-b-2 border-slate-200 py-4 px-2 focus:outline-none focus:border-blue-900 transition-colors" placeholder="Nome Completo" required>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <input type="email" id="form-email" class="w-full bg-slate-50 border-b-2 border-slate-200 py-4 px-2 focus:outline-none focus:border-blue-900 transition-colors" placeholder="E-mail" required>
+                                <input type="tel" id="form-phone" class="w-full bg-slate-50 border-b-2 border-slate-200 py-4 px-2 focus:outline-none focus:border-blue-900 transition-colors" placeholder="WhatsApp com DDD" required>
+                            </div>
+                            <textarea id="form-message" rows="4" class="w-full bg-slate-50 border-b-2 border-slate-200 py-4 px-2 focus:outline-none focus:border-blue-900 transition-colors" placeholder="Como podemos ajudá-lo?" required></textarea>
+                            <button type="submit" class="w-full bg-navy-900 text-white py-5 px-6 rounded font-bold text-lg hover:bg-blue-900 transition duration-300 shadow-xl flex items-center justify-center uppercase tracking-widest">
+                                Enviar Mensagem
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -184,17 +199,21 @@
     </main>
 
     <!-- Rodapé -->
-    <footer class="bg-gray-900 text-white py-12">
+    <footer class="bg-navy-900 text-white py-16 border-t border-slate-800">
         <div class="container mx-auto px-6 text-center">
-            <h2 class="text-2xl font-bold mb-2 tracking-tight">Dr. Gabriel Cordeiro Longaresi</h2>
-            <p class="text-blue-400 font-semibold mb-6">OAB/SP 534.783</p>
-            <div class="w-16 h-1 bg-blue-800 mx-auto mb-8"></div>
-            <p class="text-gray-500 text-sm">&copy; 2025 | Todos os direitos reservados. Advocacia Ética e Profissional.</p>
+            <h2 class="text-3xl font-bold mb-4 tracking-tighter uppercase">Advocacia Cordeiro</h2>
+            <div class="flex justify-center space-x-4 mb-8">
+                <div class="w-12 h-1 bg-blue-500"></div>
+            </div>
+            <p class="text-blue-200 font-bold text-xl mb-4">OAB/SP 534.783</p>
+            <p class="text-slate-500 text-sm mb-12">&copy; 2025 | Advocacia Cordeiro. Todos os direitos reservados. Design Profissional.</p>
+            <div class="text-xs text-slate-600 max-w-2xl mx-auto">
+                As informações contidas neste site têm caráter meramente informativo e não substituem o aconselhamento jurídico direto por um profissional habilitado.
+            </div>
         </div>
     </footer>
 
     <script>
-        // Logica para o Menu Mobile
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
 
@@ -209,31 +228,22 @@
             });
         });
 
-        // LOGICA DO FORMULARIO WHATSAPP
         document.getElementById('whatsapp-form').addEventListener('submit', function(e) {
-            e.preventDefault(); // Impede o envio tradicional
-
-            // Captura os dados dos campos
+            e.preventDefault();
             const nome = document.getElementById('form-name').value;
             const email = document.getElementById('form-email').value;
             const telCliente = document.getElementById('form-phone').value;
             const mensagem = document.getElementById('form-message').value;
 
-            // Formata a mensagem para o WhatsApp
             const textoMensagem = 
-                `Olá, Dr. Gabriel! Tenho interesse em uma consulta.%0A%0A` +
+                `Olá, Advocacia Cordeiro! Tenho interesse em uma consulta jurídica.%0A%0A` +
                 `*Nome:* ${nome}%0A` +
                 `*E-mail:* ${email}%0A` +
-                `*WhatsApp do Cliente:* ${telCliente}%0A` +
-                `*Dúvida:* ${mensagem}`;
+                `*WhatsApp:* ${telCliente}%0A` +
+                `*Assunto:* ${mensagem}`;
 
-            // Número de destino (seu número)
             const numeroDestino = "5516992613218";
-
-            // Monta a URL final
             const urlWhatsApp = `https://wa.me/${numeroDestino}?text=${textoMensagem}`;
-
-            // Abre o WhatsApp em uma nova aba
             window.open(urlWhatsApp, '_blank');
         });
     </script>
